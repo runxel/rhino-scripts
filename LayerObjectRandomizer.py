@@ -26,7 +26,6 @@ def LayerObjectRandomizer():
     
     layer_state = rs.GetBoolean("Group the new layers?", ("ParentLayer", "Off", "On"), True)
     if layer_state is None: return
-    print layer_state
     if layer_state[0]:
         parentLayer = "Random Layer Parent"
         rs.AddLayer(parentLayer)
