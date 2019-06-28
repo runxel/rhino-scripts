@@ -1,4 +1,4 @@
-# Rhino Scripts
+# Rhino Scripts 🦏
 
 Useful Rhino Scripts. Written in Python.  
 
