@@ -49,4 +49,6 @@ def LayerObjectRandomizer():
         for obj in objs:
             rs.ObjectLayer(obj,random.choice(layer_set))
 
-LayerObjectRandomizer()
+# make the usage as module possible
+if ( __name__ == '__main__' ):
+    LayerObjectRandomizer()
