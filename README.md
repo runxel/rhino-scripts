@@ -1,6 +1,8 @@
 # Rhino Scripts
 
-Useful Rhino Scripts. Written in Python.
+Useful Rhino Scripts. Written in Python.  
+
+Also have a look at the [provided samples here :octocat:](https://github.com/mcneel/rhino-developer-samples).
 
 ---
 
