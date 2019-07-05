@@ -1,13 +1,21 @@
 # -*- coding: utf-8 -*-
 
-""" Opens a corresponding GH file (if existing) when opening a Rhino file.
+""" AutoLoadGrasshopperDef.py
+    author:  Lucas Becker
+    version: 2019-07-05
+
+    Opens a corresponding GH file (if existing) when opening a Rhino file.
     It is recommended to have this script in your Rhino startup command list:
     _-RunPythonScript AutoLoadGrasshopperDef.py
 
+    Info!   Scripted in a way so it only works when opening .3dm files and 
+            the Grasshopper definition needs to rest in the same folder.
+            This could be changed – if you want to adjust this :)
     Caveat! This script can't do anything when Rhino is not already open 
             and you double-click open a Rhino file.
-            Also just works when opening .3dm files.
+            That's a limitation which I doubt can be overcome...
 """
+
 import Rhino
 import scriptcontext
 import os.path, logging, sys
