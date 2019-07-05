@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 """Creates a specified number of layers and assigns objects from a selection 
 randomly to one of the layers created.   Script by Mitch Heynick 20.02.16
 modified by Lucas Becker 2016-02-22"""
