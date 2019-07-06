@@ -18,9 +18,10 @@
 
 import Rhino
 import scriptcontext
-import os.path, logging, sys
+import os.path, sys
+import logging as log
 
-logging.basicConfig(stream=sys.stderr, level=logging.INFO)
+log.basicConfig(stream=sys.stderr, level=log.INFO)
 
 """ 
 https://developer.rhino3d.com/samples/rhinopython/current-model-info/
@@ -39,7 +40,7 @@ https://discourse.mcneel.com/t/execute-script-on-file-opening
 
 def OpenDefinition(file_path):
     """ Another workaround because we can't use rs.Command() """
-    logging.debug("OpenDefinition: {}".format(file_path))
+    log.debug("OpenDefinition: {}".format(file_path))
     
     Grasshopper = Rhino.RhinoApp.GetPlugInObject("Grasshopper")
     if not Grasshopper: return False
@@ -69,11 +70,11 @@ def AutoLoadGrasshopperDef():
     """
     key_after_load = "AfterLoadEvent"
     if scriptcontext.sticky.has_key(key_after_load):
-        logging.debug("GH autoload deactivated")
+        log.debug("GH autoload deactivated")
         Rhino.RhinoDoc.EndOpenDocument -= scriptcontext.sticky[key_after_load]
         scriptcontext.sticky.Remove(key_after_load)
     else:
-        logging.debug("GH autoload activated")
+        log.debug("GH autoload activated")
         scriptcontext.sticky[key_after_load] = eval(key_after_load)
         Rhino.RhinoDoc.EndOpenDocument += eval(key_after_load)
 
