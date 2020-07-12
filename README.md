@@ -4,6 +4,8 @@ Useful Rhino Scripts. Written in Python.
 
 Also have a look at the [provided samples here :octocat:](https://github.com/mcneel/rhino-developer-samples).
 
+- [Other scripts](https://github.com/stgeorges/pythonscripts)
+
 ---
 
 ### [AutoLoadGrasshopperDef.py](https://github.com/runxel/rhino-scripts/blob/master/AutoLoadGrasshopperDef.py)
