@@ -5,6 +5,7 @@ Useful Rhino Scripts. Written in Python.
 Also have a look at the [provided samples here :octocat:](https://github.com/mcneel/rhino-developer-samples).
 
 - [Other scripts](https://github.com/stgeorges/pythonscripts)
+- [Collected forum scripts](https://github.com/kleerkoat/rhinoScripts) (mostly RhinoScript)
 
 ---
 
